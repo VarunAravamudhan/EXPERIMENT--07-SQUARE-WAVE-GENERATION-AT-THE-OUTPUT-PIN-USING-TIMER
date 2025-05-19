@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e6a61468-131a-49bf-858f-eaa01278330e)![image](https://github.com/user-attachments/assets/9616b2f8-aa34-4b4c-910c-f89c07d81c41)# EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
+# EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
 
 ### Aim:
 To generate a PWM wave at the timer pin output and  simuate it on  proteus using an virtual oscilloscope  
@@ -358,23 +358,27 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## Output screen shots of proteus  :
  ![image](https://github.com/user-attachments/assets/938742ea-de9b-446f-b4ec-e4f146feca90)
 ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/9b750d09-9a13-439b-9c31-29786d0cc1fd)
+
 
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
 ![Screenshot (71)](https://github.com/user-attachments/assets/dd372d51-2f04-43e1-bea3-ff2f37d8ed7a)
+~~~
 TON = 3 x 10 x 10^-6 = 0.00003
 TOFF=3 x 10 x10^-6 = 0.00003
 TOTAL TIME = 0.00006
 FREQUENCY = 1/(TOTAL TIME) = 1/0.00006= 16666.7
 DUTY CYCLE = 0.00003/0.00006 = 0.5
 IN % = 0.5 * 100 = 50 %
+~~~
 
 
 
 FOR PULSE AT 750
 ![image](https://github.com/user-attachments/assets/30edafd5-f92e-494c-8e89-aa9ddb8b7fc8)
+~~~
 TON = 4 x 10 x 10^-6
     = 0.00004
 TOFF= 2 x 10 x 10^-6
@@ -389,11 +393,12 @@ DUTY CYCLE = TON /(TON+TOFF)
            = 0.7
       IN % =0.7*100 
            = 70 %
+~~~
 
 
 FOR PULSE AT 250
 ![image](https://github.com/user-attachments/assets/74d9c83c-68b3-4d6b-acdb-d99560304fc2)
-
+~~~
 TON = 1 x 10 x 10^-6
     = 0.00001
 TOFF= 2 x 10 x 10^-6
@@ -407,6 +412,8 @@ DUTY CYCLE = TON /(TON+TOFF)
            = 0.00001/0.00003
            = 0.3
       IN % = 0.3 * 100 = 30 %
+~~~
+
 
 
 ## Result :
